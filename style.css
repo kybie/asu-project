@@ -1,0 +1,337 @@
+/* Give the header a background color and center the text */
+header {
+    background: linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
+    background-image: 
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .03) 3px, rgba(0, 0, 0, .03) 6px),
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .05) 40px, rgba(0, 0, 0, .05) 80px),
+        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #8B7355;
+}   
+/* Style the main title inside the header */
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 42px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: lowercase;
+    font-style: italic;
+}   
+/* Add some margin below the header */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('example.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 25%;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    backgepeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .08) 2px, rgba(139, 115, 85, .08) 4px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(0, 0, 0, .03) 50px, rgba(0, 0, 0, .03) 100px)le, rgba(0,0,0,.02) 1px, transparent 1px);
+    background-size: 4px 4px;
+    pointer-events: none;
+    z-index: -1;
+}   
+main {
+    margin: 20px;
+}   
+/* Style paragraphs inside the main content */
+main p {
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+/* Style birthday information section */
+.birthday-info {
+    background: linear-gradient(135deg, #E8DCC8 0%, #DDD2C0 100%);
+    background-image: 
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .08) 2px, rgba(139, 115, 85, .08) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .02) 3px, rgba(0, 0, 0, .02) 6px),
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .04) 40px, rgba(0, 0, 0, .04) 80px),
+        linear-gradient(135deg, #E8DCC8 0%, #DDD2C0 100%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.5);
+}
+.birthday-info p {
+    margin: 8px 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Skill icons specific styling */
+.skill-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-icons li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-icons .nav-icon {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.skill-icons span {
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Style horizontal rule */
+hr {
+    border: none;
+    border-top: 2px solid #000;
+    margin: 15px 0;
+}
+
+/* Style links */
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #8B7355;
+}   
+/* Links header - title with bubbles */
+.links-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.links-header h2 {
+    margin: 0;
+    white-space: nowrap;
+}
+/* Link bubbles styling */
+.link-bubbles {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.link-bubbles li {
+    margin: 0;
+    padding: 0;
+}
+.link-bubbles li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
+    backgepeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .03) 3px, rgba(0, 0, 0, .03) 6px),
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .05) 40px, rgba(0, 0, 0, .05) 80px),
+        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%) 0%, #B8A696 100%);
+    background-size: 4px 4px, 100% 100%;
+    border: 2px solid #8B7355;
+    border-radius: 50%;
+    padding: 0;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.3);
+}
+.link-bubbles li a:hover {
+    background-color: rgba(160, 130, 109, 0.8);
+    animation: pop 0.3s ease-out;
+}
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes boggle {
+    0%, 100% {
+        transform: rotate(-2deg) scale(1);
+    }
+    25% {
+        transform: rotate(2deg) scale(1.05);
+    }
+    50% {
+        transform: rotate(-2deg) scale(1);
+    }
+    75% {
+        transform: rotate(2deg) scale(1.05);
+    }
+}
+/* Style unordered lists */
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: none;
+}
+/* Style list items */
+li {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+li a {
+    display: block;
+    padding: 12px 20px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #1a1a1a;
+}
+/* Navigation icons styling */
+.nav-icon {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+/* Container for card and links */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+/* Card styling */
+.card {
+    padding: 15px;
+    margin: 10px;
+    flex: 0 0 auto;
+    text-align: center;
+    background: linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
+    background-image: 
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .03) 3px, rgba(0, 0, 0, .03) 6px),
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .05) 40px, rgba(0, 0, 0, .05) 80px),
+        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(255,255,255,0.3);
+    max-width: 400px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+.card img:hover {
+    animation: pop 0.3s ease-out;
+}
+.card img:active {
+    transform: scale(0.9);
+}
+.card img.smash {
+    animation: smash 0.3s ease;
+}
+.card img.shake {
+    animation: shake 0.3s ease infinite;
+}
+.card h3 {
+    font-family: Tahoma, sans-serif;
+}
+@keyframes smash {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+.card h3 {
+    margin: 10px 0;
+    color: #1a1a1a;
+}
+.card p {
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+#counter-display {
+    font-size: 14px;
+}
+#counter-display.dance {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+.links-section {
+    flex: 1;
+}
+/* Footer styling */
+footer {
+    text-align: center;
+    paddiepeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .03) 3px, rgba(0, 0, 0, .03) 6px),
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .05) 40px, rgba(0, 0, 0, .05) 80px),
+        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%)
+        radial-gradient(circle, rgba(0,0,0,.04) 1px, transparent 1px),
+        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
+    background-size: 4px 4px, 100% 100%;
+    margin-top: 20px;
+}       
+footer p {
+    font-size: 14px;
+    color: #333;
+}   

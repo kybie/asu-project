@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Welcome To My Space</title>  
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <! -- Add a header with a title --> 
+        <header>
+            <h1>Welcome to My Personal Space</h1>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="links-section">
+                    <div class="links-header">
+                        <ul class="link-bubbles">
+                            <li><a href="https://x.com"><img src="x.webp" alt="X" class="nav-icon" /></a></li>
+                            <li><a href="https://claude.ai"><img src="claude.png" alt="Claude" class="nav-icon" /></a></li>
+                            <li><a href="https://github.com/kybie"><img src="github.png" alt="GitHub" class="nav-icon" /></a></li>
+                            <li><a href="https://google.com"><img src="google.png" alt="Google" class="nav-icon" /></a></li>
+                            <li><a href="https://www.apmex.com/"><img src="silver.webp" alt="APMEX" class="nav-icon" /></a></li>
+                            <li><a href="https://www.coinmarketcap.com"><img src="bitcoin.png" alt="CoinMarketCap" class="nav-icon" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="ss.png" alt="Example" id="card-img" />
+                    <h3>Hello, my name is Kylie!</h3>
+                    <p id="counter-display">You've booped me 0 times.</p>
+                    <hr />
+                    <p>You've stumbled upon my humble abode in the screen.</p>
+                    <p>I am an Arizona State University student and aspiring web developer. I enjoy learning new things, traveling and the beach!
+                    <p>I previously attained my first degree in Nutrition Communication and hope to build a cool app for people!
+                    I am a huge cryptocurrency advocate and want to integrate blockchain technologies into my applications with API's as well!</p>
+
+                    <div class="birthday-info">
+                        <p><strong>Knowledge and Skills</strong></p>
+                        <ul class="link-bubbles skill-icons">
+                            <li>
+                                <img src="javascript.png" alt="JavaScript" class="nav-icon" />
+                                <span>JavaScript</span>
+                            </li>
+                            <li>
+                                <img src="css.webp" alt="CSS" class="nav-icon" />
+                                <span>CSS</span>
+                            </li>
+                            <li>
+                                <img src="html.webp" alt="HTML" class="nav-icon" />
+                                <span>HTML</span>
+                            </li>
+                            <li>
+                                <img src="copilot.webp" alt="AI Vibe Coder" class="nav-icon" />
+                                <span>AI Copilot</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script>
+            let count = 0;
+            const cardImg = document.getElementById('card-img');
+            const counterDisplay = document.getElementById('counter-display');
+            
+            cardImg.addEventListener('click', function() {
+                count++;
+                
+                // Update text based on count
+                if (count >= 25) {
+                    counterDisplay.textContent = `Let's get froggy! (${count} times)`;
+                    cardImg.classList.add('shake');
+                    counterDisplay.classList.add('dance');
+                } else {
+                    counterDisplay.textContent = `You've booped me ${count} times.`;
+                    cardImg.classList.remove('shake');
+                    counterDisplay.classList.remove('dance');
+                }
+                
+                // Add smash animation
+                cardImg.classList.add('smash');
+                setTimeout(() => {
+                    cardImg.classList.remove('smash');
+                }, 300);
+            });
+        </script>
+    </body>
+</html>
