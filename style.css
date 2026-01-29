@@ -24,13 +24,16 @@ header h1 {
     font-style: italic;
 }   
 /* Add some margin below the header */
+html,
 body {
     margin: 0;
     padding: 0;
     background-image: url('images/example.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 25%;
+    min-height: 100%;
     position: relative;
 }
 body::before {
@@ -340,5 +343,9 @@ footer p {
     body {
         background-attachment: scroll;
         background-position: center;
+    }
+
+    body::before {
+        background-color: rgba(255, 255, 255, 0.15);
     }
 }
