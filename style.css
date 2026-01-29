@@ -27,7 +27,7 @@ header h1 {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('example.jpg');
+    background-image: url('images/example.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center 25%;
