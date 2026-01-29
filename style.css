@@ -44,8 +44,10 @@ body::before {
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.4);
-    backgepeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .08) 2px, rgba(139, 115, 85, .08) 4px),
-        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(0, 0, 0, .03) 50px, rgba(0, 0, 0, .03) 100px)le, rgba(0,0,0,.02) 1px, transparent 1px);
+    background-image:
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .08) 2px, rgba(139, 115, 85, .08) 4px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(0, 0, 0, .03) 50px, rgba(0, 0, 0, .03) 100px),
+        radial-gradient(circle, rgba(0, 0, 0, .02) 1px, transparent 1px);
     background-size: 4px 4px;
     pointer-events: none;
     z-index: -1;
@@ -155,10 +157,11 @@ a:hover {
     width: 70px;
     height: 70px;
     background: linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
-    backgepeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
+    background-image:
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
         repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .03) 3px, rgba(0, 0, 0, .03) 6px),
         repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .05) 40px, rgba(0, 0, 0, .05) 80px),
-        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%) 0%, #B8A696 100%);
+        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
     background-size: 4px 4px, 100% 100%;
     border: 2px solid #8B7355;
     border-radius: 50%;
@@ -325,10 +328,11 @@ li a:hover {
 /* Footer styling */
 footer {
     text-align: center;
-    paddiepeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
+    padding: 20px 0;
+    background-image:
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, .1) 2px, rgba(139, 115, 85, .1) 4px),
         repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, .03) 3px, rgba(0, 0, 0, .03) 6px),
         repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0, 0, 0, .05) 40px, rgba(0, 0, 0, .05) 80px),
-        linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%)
         radial-gradient(circle, rgba(0,0,0,.04) 1px, transparent 1px),
         linear-gradient(135deg, #C9B8A5 0%, #B8A696 100%);
     background-size: 4px 4px, 100% 100%;
